@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.weather{
+    width: 85%;
+    border: 1px solid red;
+    margin: auto;
+    margin-top: 60px;
+}
+.app{
+    width: 20%;
+    margin: auto;
+    margin-top: 20px;
+}
+.data-container{
+    width:45% ;
+    border: 1px solid green;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+.search{
+    width: 95%;
+    border: 1px solid blue;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.search img{
+    width: 5%;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+.input{
+    width:60%;
+    height: 30px;
+    
+}
+#btn{
+    width: 120px;
+    height: 32px;
+    margin-left: 40px;
+}

@@ -5,20 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>weather app</title>
+    <link rel="stylesheet" href="style.css">
     
 </head>
 
 <body>
-    <div >
-    <H1>Weather App</H1>
-        <div  ><img class="w-4 " src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-2.png" alt="err">
-        <input  type="text" placeholder="Enter your city" id="search"/>
+    <div class="weather">
+    <H1 class="app">Weather App</H1>
+    <div class="data-container">
+        <div class="search" ><img  src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-2.png" alt="err">
+        <input  type="text" class="input" placeholder="Enter your city" id="search"/>
         <button id="btn"  >Search</button>
     </div>
+    <div id="weatherdata" ></div>
+</div>
+        
     
    
 
-    <div id="weatherdata" ></div>
+   
 </div>
 </body> 
 </html>
