@@ -17,8 +17,7 @@ let productweather=document.getElementById('weatherdata')
 const displayweather=(el)=>{
     let container=document.createElement('div')
     let cityname=document.createElement('h1')
-    
-    cityname.innerText=el.location.name
+     cityname.innerText=el.location.name
     let statename=document.createElement('p')
     statename.innerText=el.location.region
     let imagep=document.createElement("img")
