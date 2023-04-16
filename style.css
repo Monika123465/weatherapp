@@ -4,7 +4,7 @@
 }
 .weather{
     width: 85%;
-    border: 1px solid red;
+    
     margin: auto;
     margin-top: 60px;
 }
@@ -15,14 +15,14 @@
 }
 .data-container{
     width:45% ;
-    border: 1px solid green;
+    
     margin-top: 40px;
     margin-bottom: 40px;
     
 }
 .search{
     width: 95%;
-    border: 1px solid blue;
+    
     height: 45px;
     display: flex;
     align-items: center;
@@ -43,5 +43,9 @@
 #btn{
     width: 120px;
     height: 32px;
-    margin-left: 40px;
+    margin-left:20px;
+}
+.data{
+    margin-bottom: 20px;
+    border: 1px solid green;
 }

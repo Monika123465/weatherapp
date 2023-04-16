@@ -1,10 +1,12 @@
 
 let search=document.getElementById('btn')
-search.addEventListener('click',()=>{
+search.addEventListener('click',(e)=>{
+    
     getupdatedData()
 })
 
 const getupdatedData=async(e)=>{
+    
     
     let city=document.getElementById('search').value
     let url=`https://api.weatherapi.com/v1/forecast.json?key=31d53c3765db4ade9a2154656230504&q=${city}&days=14`
@@ -15,7 +17,9 @@ const getupdatedData=async(e)=>{
 }
 let productweather=document.getElementById('weatherdata')
 const displayweather=(el)=>{
+    productweather.innerHTML=""
     let container=document.createElement('div')
+    container.classList.add("data")
     let cityname=document.createElement('h1')
      cityname.innerText=el.location.name
     let statename=document.createElement('p')
