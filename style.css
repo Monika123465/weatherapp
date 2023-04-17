@@ -18,6 +18,7 @@
     
     margin-top: 40px;
     margin-bottom: 40px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     
 }
 .search{
@@ -29,23 +30,34 @@
     margin: auto;
     margin-top: 40px;
     margin-bottom: 40px;
+    
 }
 .search img{
     width: 5%;
     margin-left: 20px;
     margin-right: 5px;
+    margin-top: 20px;
 }
 .input{
     width:60%;
     height: 30px;
-    
+    margin-top: 20px;
 }
 #btn{
     width: 120px;
     height: 32px;
     margin-left:20px;
+    margin-top: 20px;
 }
 .data{
+    
     margin-bottom: 20px;
     border: 1px solid green;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+.text{
+    margin-left: 20px;
+    font-size: 35px;
+    
 }

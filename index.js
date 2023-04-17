@@ -22,6 +22,7 @@ const displayweather=(el)=>{
     container.classList.add("data")
     let cityname=document.createElement('h1')
      cityname.innerText=el.location.name
+     cityname.classList.add('text')
     let statename=document.createElement('p')
     statename.innerText=el.location.region
     let imagep=document.createElement("img")
