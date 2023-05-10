@@ -38,6 +38,9 @@ const displayweather=(el)=>{
 
     
     container.append(cityname,statename,imagep,temp,time,cloudy,rain) 
-    productweather.append(container)   
+    productweather.append(container) 
+    
+    let basic=document.createElement('div')
+    basic.classList.add('basic')
 
 }
