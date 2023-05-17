@@ -1,6 +1,137 @@
 *{
     margin: 0;
     padding:0;
+    box-sizing: border-box;
+    
+    
 }
+body{
+    background-image:url(https://images.unsplash.com/photo-1561485132-59468cd0b553?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1052&q=80);
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow:hidden;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.weather{
+    width: 100%;
+    margin: auto;
+    margin-top: 60px;
+}
+.upper-part{
+    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left:70px;
+    width: 85%;
+   margin: auto;
+    
+}
+
+
+.time{
+    font-size: 45px;
+    font-style: none;
+    margin-left: 10px;
+    margin-top: 80px;
+}
+#am-pm{
+    font-size: 20px;
+}
+.date{
+    margin-top: 10px;
+    margin-left:5px;
+    font-size: 20px;
+
+}
+.place-container{
+    
+    text-align: center;
+    width: 10%;
+    color: #9E9E9E;
+    
+    
+
+}
+.time-zone{
+    font-size: 20px;
+    margin-top: 15px;
+    
+}
+.geographical-condition{
+    width: 20%;
+    margin-top: 50px;
+    margin-left:120px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: rgba(0,0,0,0.4);
+    padding-top:10px ;
+    padding-bottom: 10px;
+    color: #BDBDBD;
+    border: 1px solid white;
+    border-radius: 7px;
+}
+.weather-item{
+    display: flex;
+    gap: 40px;
+    line-height: 30px;
+    margin-left:20px;
+   
+    
+}
+.weather-forecast{
+    
+    
+    display: flex;
+    gap: 30px;
+    margin-top: 80px;
+    
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height:270px;
+    align-items: center;
+    background: rgba(0,0,0,0.4)
+}
+.today{
+    width:40%;
+    border: 1px solid white;
+    text-align: center;
+    display: flex;
+   height: 200px;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   background: rgba(0,0,0,0.4);
+   margin-left: 20px;
+   border-radius: 7px;
+   color: white;
+
+}
+.other{
+    text-align: center;
+    margin-top: 60px;
+    line-height: 30px;
+}
+.weather-forecast-item{
+    border: 1px solid white;
+    width: 20%;
+    height: 200px;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 7px;
+    color: #BDBDBD;
+
+}
+.day{
+    margin-top: 15px;
+}
+.temp{
+    margin-top: 5px;
+}
+#sun{
+    margin-right: 15px;
+}
+
+
 
 
