@@ -21,17 +21,13 @@ body{
     margin-top: 60px;
 }
 .upper-part{
-    
-    display: flex;
+     display: flex;
     justify-content: space-between;
     margin-top: 20px;
     margin-left:70px;
     width: 85%;
    margin: auto;
-    
-}
-
-
+    }
 .time{
     font-size: 45px;
     font-style: none;
@@ -45,17 +41,12 @@ body{
     margin-top: 10px;
     margin-left:5px;
     font-size: 20px;
-
 }
 .place-container{
-    
-    text-align: center;
+     text-align: center;
     width: 10%;
     color: #9E9E9E;
-    
-    
-
-}
+    }
 .time-zone{
     font-size: 20px;
     margin-top: 15px;
@@ -78,23 +69,18 @@ body{
     gap: 40px;
     line-height: 30px;
     margin-left:20px;
-   
-    
-}
+   }
 .weather-forecast{
-    
-    
     display: flex;
     gap: 30px;
     margin-top: 80px;
-    
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     height:270px;
     align-items: center;
     background: rgba(0,0,0,0.4)
 }
 .today{
-    width:40%;
+    width:30%;
     border: 1px solid white;
     text-align: center;
     display: flex;
@@ -108,7 +94,7 @@ body{
 }
 .other{
     text-align: center;
-    margin-top: 60px;
+    margin-top: 30px;
     line-height: 30px;
 }
 .weather-forecast-item{
@@ -132,6 +118,10 @@ body{
     margin-right: 15px;
 }
 
-
+.future-forecast{
+    display: flex;
+    width: 70%;
+    gap: 12px;
+}
 
 

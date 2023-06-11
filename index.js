@@ -1,58 +1,25 @@
 
-// let search=document.getElementById('btn')
-// search.addEventListener('click',(e)=>{
-    
-//     getupdatedData()
-// })
+const time1=document.getElementById("time")
+const date1=document.getElementById("date")
+const currentweatherItems=document.getElementById("current-weather-items")
+const country=document.getElementById("country")
+const timezone=document.getElementById("timezone")
+const currenttemp=document.getElementById('current-temp')
+const weatherforecast=doucment.getElementById('future-forecast')
 
-// const getupdatedData=async(e)=>{
-    
-    
-//     let city=document.getElementById('search').value
-//     let url=`https://api.weatherapi.com/v1/forecast.json?key=31d53c3765db4ade9a2154656230504&q=${city}&days=14`
-//    const res=await fetch(url)
-//    const data=await res.json()
-//    displayweather(data)
-    
-// }
-// let dataimg=[
-//     'https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png',
-//     'https://cdn.icon-icons.com/icons2/2791/PNG/512/partly_cloudy_day_sun_clouds_weather_icon_177560.png',
-//     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7O9jfQp7bKHkBIohhAWcF8ARpg59NMTAdTg&usqp=CAU',
-//     'https://cdn-icons-png.flaticon.com/512/4150/4150897.png'
-    
-// ]
-// console.log(dataimg)
+const days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
+const months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','DEC']
 
+setInterval(()=>{
+    const time=new Date()
+    const month=time.getMonth()
+    const date=time.getDate()
+    const day=time.getDay()
+    const hour=time.getHours()
+    const hoursIn12HrFormat=hour >=13 ? hour %12:hour
+    const minutes=time.getMinutes()
+    const ampm=hour >= 12 ? "PM":"AM"
 
-
-// let productweather=document.getElementById('weatherdata')
-// const displayweather=(el)=>{
-//     productweather.innerHTML=""
-//     let container=document.createElement('div')
-//     container.classList.add("data")
-//     let cityname=document.createElement('h1')
-//      cityname.innerText=el.location.name
-//      cityname.classList.add('text')
-//     let statename=document.createElement('p')
-//     statename.innerText=el.location.region
-
-    
-    
-//     let temp=document.createElement('h1')
-//     temp.innerText= el.current.temp_c+` °C`
-//     let time=document.createElement("p")
-//     time.innerText=el.location.localtime
-//     let cloudy=document.createElement('h3')
-//     cloudy.innerText=el.current.condition.text
-//     let rain=document.createElement('p')
-//     rain.innerText=`Rain:`+el.current.cloud+`%`
-
-    
-//     container.append(cityname,statename,temp,time,cloudy,rain) 
-//     productweather.append(container) 
-    
-//     let basic=document.createElement('div')
-//     basic.classList.add('basic')
-
-// }
+    time1.innerHTML=(hoursIn12HrFormat< 10 ? "0"+hoursIn12HrFormat:hoursIn12HrFormat)+":"+(minutes<10? "0"+minutes:minutes)+""+` <span id="am-pm">${ampm}</span>`
+    date1.innerHTML=days[day]+","+date+""+months[month]
+},1000)
