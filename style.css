@@ -80,7 +80,7 @@ body{
     background: rgba(0,0,0,0.4)
 }
 .today{
-    width:30%;
+    width:25%;
     border: 1px solid white;
     text-align: center;
     display: flex;
