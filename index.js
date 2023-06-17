@@ -21,7 +21,7 @@ setInterval(()=>{
     const ampm=hour >= 12 ? "PM":"AM"
 
     time1.innerHTML=(hoursIn12HrFormat< 10 ? "0"+hoursIn12HrFormat:hoursIn12HrFormat)+":"+(minutes<10? "0"+minutes:minutes)+""+` <span id="am-pm">${ampm}</span>`
-    date1.innerHTML=days[day]+","+date+""+months[month]
+    date1.innerHTML=days[day]+" ," +date+ " "+months[month]
 },1000)
 getWeatherData()
 function getWeatherData(){
@@ -51,7 +51,7 @@ function showWeatherData(data){
 </div>
 <div class="weather-item">
     <div>Wind speed</div>
-    <div>${wind_speed}</div>
+    <div class="wind">${wind_speed}</div>
 </div>
 <div class="weather-item">
     <div>sunrise</div>
